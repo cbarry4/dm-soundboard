@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#15131a">
+  <title>DM Soundboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <h1>🎲 DM Soundboard</h1>
+    <div class="topbar-controls">
+      <button id="stopAllBtn" class="btn stop-all">⏹ Stop All</button>
+      <button id="editModeBtn" class="btn edit-mode">✏️ Edit</button>
+    </div>
+  </header>
+
+  <nav class="tabs-row">
+    <div id="tabs" class="tabs"></div>
+    <button id="addTabBtn" class="btn add-tab">＋ Tab</button>
+  </nav>
+
+  <div id="categoryActions" class="category-actions hidden">
+    <button id="addSoundsBtn" class="btn add-sounds">＋ Add Sounds</button>
+    <button id="renameCatBtn" class="btn rename-cat hidden">✏️ Rename Tab</button>
+    <button id="deleteCatBtn" class="btn delete-cat hidden">🗑 Delete Tab</button>
+  </div>
+
+  <!-- Hidden file picker - accepts all common audio formats -->
+  <input type="file" id="fileInput" accept="audio/*,.mp3,.wav,.ogg,.m4a,.flac,.aac" multiple style="display:none">
+
+  <main id="board" class="board">
+    <p class="empty-state">Tap <strong>＋ Tab</strong> to create your first category,<br>then tap <strong>＋ Add Sounds</strong> to load audio files.</p>
+  </main>
+
+  <footer class="now-playing-bar">
+    <span id="nowPlayingLabel">Nothing playing</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
