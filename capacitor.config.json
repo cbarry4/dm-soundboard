@@ -1,0 +1,13 @@
+{
+  "appId": "com.dm.soundboard",
+  "appName": "DM Soundboard",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
